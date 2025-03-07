@@ -21,8 +21,8 @@ const RoommateDetails: React.FC<RoommateDetailsProps> = ({ }) => {
       firstName: "",
       middleInitial: "",
       lastName: "",
-      gender: undefined,
       phoneNumber: "",
+      gender: "" as "Male" | "Female" | "Other" | undefined,
       email: "",
       university: "",
       registrationNumber: ""
@@ -50,7 +50,7 @@ const RoommateDetails: React.FC<RoommateDetailsProps> = ({ }) => {
   }
 
   function onReject() {
-    form.reset(); // Clears the form
+    form.reset();
     toast("Form Cleared")
   }
 
