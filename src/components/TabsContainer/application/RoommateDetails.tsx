@@ -44,14 +44,14 @@ const RoommateDetails: React.FC<RoommateDetailsProps> = ({ }) => {
         Email Address: {values.email} <br />
         University/College: {values.university} <br />
         Registration Number: {values.registrationNumber}
-      </div>
+      </div>, {position: "top-center"}
     )
 
   }
 
   function onReject() {
     form.reset();
-    toast("Form Cleared")
+    toast("Form Cleared", {position: "top-center"})
   }
 
 
